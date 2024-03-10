@@ -64,7 +64,12 @@ let s = 5;
 console.log(r > s);
 console.log(r >= s);
 
-
+// Logical oprators
+let o = 5;
+let p = 6;
+console.log(o<p && o==5);
+console.log(o<p || o==5);
+console.log(!true);
 
 
 
