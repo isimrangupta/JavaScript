@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-1</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+
+
+<script>
+  document.querySelector('#start').addEventListener('click', function(){
+    const start = function(){
+        console.log("Simran", Date.now());
+    }
+    const toStop = setInterval(start, 2000)
+    document.querySelector('#stop').addEventListener('click',function(){
+    clearInterval(toStop)
+  })
+})
+</script>
+</html>
