@@ -1,1 +1,0 @@
-heroPower.hitesh()
