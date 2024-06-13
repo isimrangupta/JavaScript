@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical scoping</title>
+</head>
+
+<body style="background-color: black; color: azure;">
+    <script>
+
+        // function init() {
+        //     let name = "Mozilla";
+        //     function displayName() {
+
+        //         console.log(name);
+        //     }
+        //     displayName();
+        // }
+        // init();
+
+        function outer(){
+            let username = "Simran"
+            function inner(){
+                console.log("INNER", username);
+            }
+            function innerTwo(){
+                console.log("INNERTWO", username);
+            }
+            inner()
+            innerTwo()
+        }
+        outer()
+        console.log("TOO OUTER", username);
+
+
+        
+
+
+    </script>
+</body>
+
+</html>
